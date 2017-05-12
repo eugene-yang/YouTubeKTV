@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+
+	"name": "YouTube KTV",
+	"description": "Test",
+	"version": "0.1",
+	"author": "Eugene Yang",
+  
+	"minimum_chrome_version": "58",
+	
+	"content_scripts": [
+		{
+			"matches": [
+				"http://www.youtube.com/*",
+				"https://www.youtube.com/*"
+			],
+			"css": ["css/youtubePage.css"],
+			"js": ["js/jquery-3.2.1.min.js", "js/modifyPage.js"]
+		}
+	],
+	
+	"permissions": [
+		"http://*.youtube.com/",
+		"https://*.youtube.com/",
+		"http://*.googleapis.com/*",
+		"https://*.googleapis.com/*",
+		"tabs",
+		"storage"
+	],
+	
+	"page_action": {
+		"default_title": "YouTube KTV"
+	}
+
+}

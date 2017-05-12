@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,iCAAe;EACd,KAAK,EAAE,IAAI;EACX,uCAAM;IACL,KAAK,EAAE,IAAI",
+"sources": ["../scss/youtubePage.scss"],
+"names": [],
+"file": "youtubePage.css"
+}

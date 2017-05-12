@@ -55,6 +55,9 @@ function SetupFilter(){
 		// reconnect outputs
 		splitter.connect(gainL, 0);
 		splitter.connect(gainR, 1);
+		gainL.connect(audioContext.destination);
+		gainR.connect(audioContext.destination);
+
 
 		merger = audioContext.createChannelMerger(2);
 		
